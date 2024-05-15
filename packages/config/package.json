@@ -1,0 +1,9 @@
+{
+  "name": "@superapp/config",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "tsconfig": "*",
+    "typescript": "4.8.4"
+  }
+}

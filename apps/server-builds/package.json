@@ -1,0 +1,22 @@
+{
+  "name": "server-builds",
+  "version": "0.0.1",
+  "description": "NODE SERVER",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn install",
+    "serve": "node index.js",
+    "start": "nodemon index.js",
+    "build-matrix": "node scripts/build-matrix.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "path": "^0.12.7"
+  }
+}

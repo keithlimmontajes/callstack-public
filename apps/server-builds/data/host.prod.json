@@ -1,0 +1,12 @@
+{
+  "ios": {
+    "0.0.1": {
+      "Landers": "http://localhost:6000/mini-app/Landers?platform=ios&version=0.0.1&file=[name][ext]"
+    }
+  },
+  "android": {
+    "0.0.1": {
+      "Landers": "http://localhost:6000/mini-app/Landers?platform=android&version=0.0.1&file=[name][ext]"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "super-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "SnapMart <app@snapmart.ph>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "configs/*"
+  ],
+  "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "clean": "yarn workspaces foreach run clean:node_modules && rm -rf ./node_modules",
+    "all": "yarn workspaces foreach run bootstrap",
+    "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
+    "start:host": "yarn workspace host run start",
+    "start:landers": "yarn workspace landers run start",
+    "start:landers:standalone": "yarn workspace landers run start:standalone",
+    "run:host:ios": "yarn workspace host run ios",
+    "run:host:android": "yarn workspace host run android",
+    "run:landers:ios": "yarn workspace landers run ios",
+    "run:landers:android": "yarn workspace landers run android",
+    "run:server-builds": "yarn workspace server-builds run start",
+    "lint": "yarn workspaces foreach run lint",
+    "adbreverse": "adb reverse tcp:9001 tcp:9001 && adb reverse tcp:5000 tcp:5000",
+    "build-miniapps": "node scripts/build-miniapp.js",
+    "serve": "yarn workspace server-builds run serve",
+    "serve:staging": "yarn workspace server-builds run serve",
+    "build:staging": "yarn build-miniapps",
+    "update-compatibility-matrix": "node scripts/update-compatibility-matrix.js && yarn workspace server-builds run build-matrix"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "concurrently": "^7.6.0",
+    "patch-package": "^8.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "resolutions": {
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.14"
+  }
+}

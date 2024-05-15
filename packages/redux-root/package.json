@@ -1,0 +1,24 @@
+{
+  "name": "@redux/root",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "tsconfig": "*",
+    "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.22.3",
+    "@react-native-community/netinfo": "11.3.1",
+    "@redux/landers": "*",
+    "@reduxjs/toolkit": "2.2.1",
+    "@superapp/api": "*",
+    "react": "18.2.0",
+    "react-native": "0.72.11",
+    "react-redux": "9.1.0"
+  }
+}

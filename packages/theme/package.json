@@ -1,0 +1,18 @@
+{
+  "name": "@superapp/theme",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "tsconfig": "*",
+    "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "@rneui/base": "^4.0.0-rc.8",
+    "@rneui/themed": "^4.0.0-rc.8"
+  }
+}

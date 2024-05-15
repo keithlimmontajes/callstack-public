@@ -1,0 +1,17 @@
+{
+  "host": {
+    "sources": [
+      {
+        "name": "Landers",
+        "type": "internal",
+        "version": "0.0.1",
+        "url": "<url here>"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "Landers": "0.0.1"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@superapp/api",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@superapp/config": "*",
+    "@superapp/types": "*",
+    "tsconfig": "*",
+    "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "2.2.1"
+  }
+}
